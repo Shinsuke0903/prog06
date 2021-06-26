@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>TEKITO</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/sample.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- ヘッダーを書いていく -->
+    <header>
+      <img src="imgs/1.jpeg" alt="" width="26" height="28" >
+      <h1>TEKITO</h1>
+      <!-- 新規登録/ログイン部分を書いていく -->
+      <div class="reg">
+        <div class="register">
+          <p id="new">新規登録</p>
+          <div>&nbsp;</div>
+          <p>/</p>
+          <div>&nbsp;</div>
+          <p id="login">ログイン</p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- 上部を書いていく -->
+      <div class="top-wrapper">
+        <!-- コンセプトの説明 -->
+        <div class="concept">
+          <h1>糖質管理トータルサポート</h1>
+          <p>「TEKITO」は飲食店メニューの糖質管理サービスです</p>
+        </div>
+        <!-- 加盟店の作成 -->
+        <div class="additem">
+          <h1>加盟店</h1>
+        </div>
+        <div class="add">
+          <!-- 加盟店の一番大きい店作成 (やよい軒)-->
+          <div class="mainadd">
+            <!-- 中身 -->
+            <h1>A店</h1>
+            <div class="photo">
+            </div>
+            <p>ジェノベーゼのパスタがウリです</p>
+          </div>
+          <div class="subadd">
+            <div class="subadd1">
+              <!-- 加盟店サブ店1 (大戸屋)-->
+              <div class="subcontent1">
+                <!-- 中身 -->
+                <h1>B店</h1>
+                <div class="subphoto1">
+                </div>
+                <p>卵にこだわった卵かけご飯</p>
+              </div>
+              <!-- 加盟店サブ店2 ()-->
+              <div class="subcontent2">
+                <!-- 中身 -->
+                <h1>C店</h1>
+                <div class="subphoto2">
+                </div>
+                <p>早い、安い、うまい牛丼</p>
+              </div>
+            </div>
+            <div class="subadd2">
+              <!-- 加盟店サブ店3 ()-->
+              <div class="subcontent3">
+                <!-- 中身 -->
+                <h1>D店</h1>
+                <div class="subphoto3">
+                </div>
+                <p>秘伝のカレー</p>
+              </div>
+              <!-- 加盟店サブ店4 ()-->
+              <div class="subcontent4">
+                <!-- 中身 -->
+                <h1>E店</h1>
+                <div class="subphoto4">
+                </div>
+                <p>流行のチキン</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 中部を書いていく -->
+      <div class="middle-wrapper">
+        <h1>リクエストサービス</h1>
+        <h2>1時間前までにリクエストすれば、これから行く飲食店のご飯の量を調整できます</h2>
+        <!-- ボタンの作成書いていく -->
+        <div class="request">
+          <a class="btn-gradation" id="analysis">ご飯の量をリクエスト</a>
+        </div>
+      </div>
+      <!-- 最下部を書いていく(お問い合わせフォーム) -->
+      <!-- db3でphp連携する -->
+      <div class="otoiawase">
+        <div class="top">お問い合わせ</div>
+        <div class="form">
+          <form action="./f1/f1add.php" method="post" class="formcontent">
+            <div class="Form-Item">
+              <p class="Form-Item-Label">
+                <span class="Form-Item-Label-Required">必須</span>会社名
+              </p>
+              <!-- entityの部分 -->
+              <input type="text" class="Form-Item-Input" name="entity" placeholder="例）株式会社メタライフ">
+            </div>
+            <div class="Form-Item">
+              <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>氏名</p>
+              <!-- mynameの部分 -->
+              <input type="text" class="Form-Item-Input" name="myname" placeholder="例）後藤慎介">
+            </div>
+            <div class="Form-Item">
+              <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>電話番号</p>
+              <!-- tellの部分 -->
+              <input type="text" class="Form-Item-Input" name="tell" placeholder="例）000-0000-0000">
+            </div>
+            <div class="Form-Item">
+              <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>メールアドレス</p>
+              <!-- addressの部分 -->
+              <input type="email" class="Form-Item-Input" name="address1" placeholder="例）example@gmail.com">
+            </div>
+            <div class="Form-Item">
+              <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">必須</span>お問い合わせ内容</p>
+              <!-- askの部分 -->
+              <textarea class="Form-Item-Textarea" name="ask"></textarea>
+            </div>
+            <input type="submit" class="Form-Btn" value="送信する">
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p class="last">copyrights 2021 Metalife All RIghts Reserved.</p>
+    </footer>
+    <!-- モーダル部分を書いていく -->
+    <!-- ログイン部分 -->
+    <div id="modal1" class="modalgood">
+      <div class="modal-content">
+        <div class="modal-body">
+          <!-- モーダルを閉じるボタン -->
+          <div class="batsu">
+              <input type="button" id="closeBtn1" value="×"> 
+          </div>
+          <!-- ログインをクリックしたら表示する -->
+          <div class="log">
+            <div class="log-item">
+              <h1>ログインして下さい</h1>
+            </div>
+            <form action="login.php" method="post">
+              <div class="Form-Item1">
+                <p class="Form-Item-Label1">
+                  <span class="Form-Item-Label-Required1">必須</span>
+                  <p class="modal-item">メールアドレス</p> 
+                </p>
+                <!-- entityの部分 -->           
+                  <input type="text" class="Form-Item-Input1" name="mail" >
+              </div>
+              <div class="Form-Item1">
+                <p class="Form-Item-Label1">
+                  <span class="Form-Item-Label-Required1">必須</span>
+                  <p class="modal-item">パスワード</p> 
+                </p>
+                <!-- entityの部分 -->
+                <input type="password" class="Form-Item-Input1" name="passone" >
+              </div>
+              <div class="log-bt">
+                <input type="submit" class="Form-Btn1" value="ログイン">
+              </div>
+            </form>
+          </div>  
+        </div>
+      </div>
+    </div>
+
+    <!-- 新規登録部分 -->
+    <div id="modal2" class="modalbad">
+      <div class="modal-content">
+        <div class="modal-body">
+          <!-- モーダルを閉じるボタン -->
+          <div class="batsu">
+              <input type="button" id="closeBtn2" value="×"> 
+          </div>
+        <!-- ログインをクリックしたら表示する -->
+          <div class="log">
+            <div class="log-item">
+              <h1>新規会員登録</h1>
+            </div>
+            <form action="signup.php" method="post">
+              <div class="Form-Item1">
+                <p class="Form-Item-Label1">
+                  <span class="Form-Item-Label-Required1">必須</span>
+                  <p class="modal-item">名前</p> 
+                </p>         
+                  <input type="text" class="Form-Item-Input1" name="nameone" required>
+              </div>
+              <div class="Form-Item1">
+                <p class="Form-Item-Label1">
+                  <span class="Form-Item-Label-Required1">必須</span>
+                  <p class="modal-item">メールアドレス</p> 
+                </p>
+                <input type="password" class="Form-Item-Input1" name="mail" required>
+              </div>
+              <div class="Form-Item1">
+                <p class="Form-Item-Label1">
+                  <span class="Form-Item-Label-Required1">必須</span>
+                  <p class="modal-item">パスワード</p> 
+                </p>
+                <input type="password" class="Form-Item-Input1" name="passone" required >
+              </div>
+              <div class="log-bt">
+                <input type="submit" class="Form-Btn1" value="新規登録">
+                <p id="login10">登録済みの方はこちら</p>
+              </div>
+            </form>
+          </div>    
+        </div>
+      </div>
+    </div>
+    <!-- フッターの作成 -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <!--   
+      <script src="js/jquery-2.1.3.min.js"></script>
+      <script src="js/action.js"></script>
+    JQuery -->
+      <!-- JQuery -->
+      <!--** 以下Firebase **-->
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+      <!-- 6.6.1に該当する箇所はfirebaseのバージョンですので更新されるたびに随時変わります🤗    8.6.2に変える必要がある -->
+      <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      
+      <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#config-web-app -->
+      <script src="js/syokugo.js"></script>
+      <!-- /MapArea -->
+      <!-- jQuery&GoogleMapsAPI -->
+      <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+      <script src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=Ah09rxoHoMfDGlwhs8hKdsf6iKTzh81JHzQo9mU3AzIvpWSzVRT9R4mchbwbxRhB'
+        async defer></script>
+      <script src="js/BmapQuery.js"></script>
+  </body>
+</html>

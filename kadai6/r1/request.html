@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>リクエスト入力フォーム</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/request.css">
+</head>
+<body>
+    <div class="item">
+      <h1>ご飯の量をリクエストして下さい</h1>
+    </div>
+    <!-- お問い合わせフォームの部分-->
+    <div class="otoiawase">
+      <form action="r1add.php" method="post" class="formcontent">
+        <div class="Form-Item">
+          <p class="Form-Item-Label">
+            <span class="Form-Item-Label-Required">必須</span>店名
+          </p>
+          <!-- entityの部分 -->
+          <input type="text" class="Form-Item-Input" name="store" placeholder="例）大戸屋">
+        </div>
+        <div class="Form-Item">
+          <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>メニュー</p>
+          <!-- mynameの部分 -->
+          <input type="text" class="Form-Item-Input" name="menu" placeholder="例）唐揚げ定食">
+        </div>
+        <div class="Form-Item">
+          <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>ご飯の量</p>
+          <!-- tellの部分 -->
+          <input type="text" class="Form-Item-Input" name="gram" placeholder="例）80g">
+        </div>
+        <div class="Form-Item">
+          <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>その他の要望</p>
+          <!-- addressの部分 -->
+          <input type="text" class="Form-Item-Input" name="other" placeholder="例）サラダ多めでお願いします。">
+        </div>
+        <div class="Form-Item">
+          <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">必須</span>お問い合わせ内容</p>
+          <!-- askの部分 -->
+          <textarea class="Form-Item-Textarea" name="detail"></textarea>
+        </div>
+        <div class="lastbottom">
+          <div class="lastbottom1">
+            <a class="Form-Btn2" href='../mypage.php'>戻る</a>
+          </div>
+          <div class="lastbottom2">
+            <input type="submit" class="Form-Btn" value="送信する">
+          </div>
+        </div>
+      </form>
+    </div>
+     <!-- 過去お問い合わせしたものの表示-->
+     <div class="pastcontent">
+     </div>
+</body>
+</html>

@@ -1,0 +1,163 @@
+/* html,bodyの設定をする */
+html, body{
+  height:50%;
+  margin:0;
+  padding:0;
+}
+/* ヘッダー部分の設定 */
+header{
+  padding-bottom: 7px;
+  padding-top:1px;
+}
+
+/* 画面左の設定 */
+.items{
+  background-image:url(../imgs/orange.jpg);
+}
+
+/* 画像を投稿するところ */
+/* 画像を投稿するところ全体 */
+.chart{
+  margin-top: 100px;
+}
+.chart1{
+  margin-bottom: 20px;
+  text-align: center;
+  
+}
+.chart1 h1{
+  color: white;
+  font-weight: bold;
+
+}
+
+.serial{
+  display:flex;
+}
+/* ファイルを選択するボタン */
+.file-up{
+  width: 15px;
+  margin-left: 5px;
+  padding-top:10px;
+}
+.menuimg{
+  color: white;
+
+  width: 15px;
+}
+/* テキストを書き込む */
+.caption{
+
+  width:80px;
+  margin-left: 25px;
+  
+}
+#caption{
+  width:200px;
+}
+
+/* 送信ボタン */
+.submit{
+ 
+  margin-top: 20px;
+  margin-left: 220px;
+
+}
+
+#label1{
+  color: white;  
+  background-color: #ff6928;
+  padding: 6px;
+  border-radius: 12px;
+
+}
+#label1:hover{
+  opacity:0.6;
+}
+#label2{
+  color: white;  
+  background-color: #ff6928;
+  padding: 6px;
+  border-radius: 12px;
+}
+#label2:hover{
+  opacity:0.6;
+}
+
+/* 足を診る部分の設定をする */
+.foot{
+  margin-top: 30px;
+  text-align: center;
+}
+.foot p{
+  color: white;
+  font-size: bold;
+  
+}
+.foot1{
+  margin-top: 10px;
+
+  }
+
+/* 画像を表示するところ */
+/* 折り返しのための枠 */
+.menus{
+  z-index: 1;
+  display:flex;
+  flex-wrap: wrap;
+  overflow: scroll;
+  width:1200px;
+  height:760px;
+  padding-left: 25px;
+  
+
+}
+/* 一つのブロックの中のブロック */
+.menu{
+  border-radius: 15px;
+  width:200px;
+  height: 200px;
+  margin: 10px;
+  margin-top:10px;
+  background-color: #FF8856;
+ 
+}
+/* 画像を入れる箱 */
+.menu-image{
+  width:190px;
+  height: 140px; 
+}
+/* 画像 */
+#photo{
+  width:170px;
+  height:150px;
+  margin-top: 8px;
+  margin-left: 14px;
+  border-radius:15px;
+
+}
+/* コメントを入れる箱 */
+.comment{
+  text-align: center;
+  width:190px;
+  height: 40px;
+  margin-top: 23px;
+
+}
+/* コメント */
+.comment p{
+  font-size: 14px;
+  color: white;
+
+}
+/* * フッターの設定 */
+footer {
+  background-color: #ff6928;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  color: white;
+  padding:7px;
+  font-size: 12px;
+  z-index: 10;
+  
+}

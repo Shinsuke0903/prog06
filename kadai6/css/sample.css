@@ -1,0 +1,643 @@
+/* html,bodyの設定をする */
+html, body{
+  height:50%;
+  margin:0;
+  padding:0;
+  z-index: 10; 
+}
+/* ヘッダーの設定をする */
+header {
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  height: 36px;
+  padding-top:4px; 
+  background-color: white; 
+  color: #ff6928; 
+  display: flex;
+}
+header h1{
+  font-size:35px;
+  margin-left: 7px;
+}
+header img{
+  border-radius: 30px;
+  margin-top: 3px;
+  margin-left: 8px;
+}
+h1 {
+  font-size: 100%;
+}
+.reg{
+  margin-top: 13px;
+  margin-left: 1100px;
+}
+.register{
+  display: flex;
+}
+.register p:hover{
+  opacity:0.3;
+  cursor: pointer;
+}
+/* 上部の設定 */
+.top-wrapper{
+  height:600px;
+
+}
+/* コンセプト部分の設定 */
+.concept{
+  height: 65px;
+  text-align: center;
+  background-color: #ff6928;
+  padding-top: 6px;
+}
+.concept h1{
+  font-size: 23px;
+  color: white;
+  margin-top: 5px;
+}
+.concept p{
+  color: white;
+  font-size: 23px;
+  margin-top: 5px;
+  
+}
+/* 加盟店の設定 */
+/* 加盟店の見出し設定 */
+.additem{
+  height: 35px;
+  text-align: center;
+
+}
+.additem h1{
+  font-size: 25px;
+  margin-top: 4px;
+}
+/* 加盟店の枠設定 */
+.add{
+  display:flex;
+  border: 3px solid #ff6928;
+  border-radius:20px;
+  height: 500px;
+  width: 90%;
+  margin:0 auto;
+}
+/* (左側)一番大きい加盟店の枠設定 */
+.mainadd{
+  height: 500px;
+  width:50%;
+  text-align: center;
+}
+.mainadd h1{
+  font-size: 25px;
+  margin-top: 5px;
+}
+.mainadd p{
+  font-size: 22px;
+  margin-top: 10px;
+  color: #ff6928;
+  font-weight: bold;
+}
+.photo{
+  width:100%;
+  margin:0 auto;
+  margin-top: 10px;
+  background-image: url(../imgs/4.jpeg);
+  background-size: cover;
+  height: 400px;
+  background-position:center top;
+}
+/* 右側加盟店の枠設定 */
+.subadd{
+  height: 500px;
+  width:50%;
+  text-align: center;
+}
+.subphoto1{
+  background-image: url(../imgs/5.jpeg);
+  background-size: cover;
+  height: 180px;
+}
+
+
+.subphoto2{
+  background-image: url(../imgs/6.jpeg);
+  background-size: cover;
+  height: 180px;
+}
+.subphoto3{
+
+  background-image: url(../imgs/7.jpg);
+  background-size: cover;
+  height: 180px;
+
+}
+.subphoto4{
+
+  background-image: url(../imgs/8.jpg);
+  background-size: cover;
+  height: 180px;
+  background-position:50% 30%;
+
+}
+.subadd1{
+
+  display: flex;
+  height: 250px;
+}
+.subadd p{
+  color: #ff6928;
+  font-weight: bold;
+
+}
+
+
+
+
+.subcontent1{
+
+  width:50%;
+
+}
+.subcontent1 h1{
+  font-size: 20px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+.subcontent1 p{
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.subcontent2{
+  width:50%;
+
+}
+.subcontent2 h1{
+  font-size: 20px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+.subcontent2 p{
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.subcontent3{
+  width:50%;
+
+}
+.subcontent3 h1{
+  font-size: 20px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+.subcontent3 p{
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.subcontent4{
+  width:50%;
+}
+.subcontent4 h1{
+  font-size: 20px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+.subcontent4 p{
+  font-size: 18px;
+  margin-top: 10px;
+}
+.subadd2{
+  display: flex;
+  height: 250px;
+
+}
+/* 中部の設定 */
+.middle-wrapper{
+  height:130px;
+  text-align: center;
+  background-color: #FFC7AF;
+  padding-top: 8px;
+  margin-top: 30px;
+}
+.middle-wrapper h1{
+  font-size: 25px;
+  margin-top: 12px;
+}
+.middle-wrapper h2{
+  font-size: 20px;
+  margin-top: 5px;
+}
+#analysis {
+  list-style-type: none;
+  background-color: #ff6928;
+  cursor: pointer;
+  height:30px;
+  font-size:20px;
+  padding:10px;
+  width:100%;
+  color: white;
+  border-radius: 8px;
+}
+#analysis:hover{
+  opacity:0.7;
+}
+.request{
+  margin: auto;
+  width:40%;
+  margin-top: 20px;
+}
+/* 最下部の設定(お問い合わせフォーム部分の設定) */
+.otoiawase{
+  padding-top: 30px;
+  height: 850px;
+  
+}
+.top{
+  font-size: 25px;
+  text-align: center;
+
+}
+.Form {
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 720px;
+
+}
+
+@media screen and (max-width: 480px) {
+  .Form {
+    margin-top: 40px;
+  }
+}
+.Form-Item {
+  border-top: 1px solid #ddd;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  width: 50%;
+  margin:0 auto;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item {
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    flex-wrap: wrap;
+  }
+}
+.Form-Item:nth-child(5) {
+  border-bottom: 1px solid #ddd;
+}
+.Form-Item-Label {
+  width: 100%;
+  max-width: 248px;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  font-size: 18px;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item-Label {
+    max-width: inherit;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+  }
+}
+.Form-Item-Label.isMsg {
+  margin-top: 8px;
+  margin-bottom: auto;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item-Label.isMsg {
+    margin-top: 0;
+  }
+}
+.Form-Item-Label-Required {
+  border-radius: 6px;
+  margin-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 48px;
+  display: inline-block;
+  text-align: center;
+  background: #ff6928;
+  color: #fff;
+  font-size: 14px;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item-Label-Required {
+    border-radius: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    width: 32px;
+    font-size: 10px;
+  }
+}
+.Form-Item-Input {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-left: 40px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 48px;
+  flex: 1;
+  width: 100%;
+  max-width: 410px;
+  background: #eaedf2;
+  font-size: 18px;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item-Input {
+    margin-left: 0;
+    margin-top: 18px;
+    height: 40px;
+    flex: inherit;
+    font-size: 15px;
+  }
+}
+.Form-Item-Textarea {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-left: 40px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 200px;
+  flex: 1;
+  width: 100%;
+  max-width: 410px;
+  background: #eaedf2;
+  font-size: 18px;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item-Textarea {
+    margin-top: 18px;
+    margin-left: 0;
+    height: 200px;
+    flex: inherit;
+    font-size: 15px;
+  }
+}
+.Form-Btn {
+  border-radius: 6px;
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 200px;
+  display: block;
+  letter-spacing: 0.05em;
+  background: #ff6928;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+.Form-Btn:hover{
+  opacity:0.7;
+}
+@media screen and (max-width: 480px) {
+  .Form-Btn {
+    margin-top: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 160px;
+    font-size: 16px;
+  }
+}
+
+.touroku{
+  border: 1px solid red;
+  height: 770px;
+}
+
+/* モーダル部分の設定を指定する */
+.modalgood{
+  display: none;
+  position: fixed;
+  z-index: 20;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+  }
+  .modalgood p{
+    text-align: center;
+  }
+  .modalgood h1 {
+    text-align: center;
+    margin-top:100px;
+  }
+  .modalbad{
+  display: none;
+  position: fixed;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+  }
+  .batsu{
+    width:40px;
+    float:right;
+    margin-right:30px;
+    margin-top: 10px;
+  }
+  .modalbad p{
+    text-align: center;
+
+  }
+  .modalbad h1{
+    text-align: center;
+  }
+  .modal-content{
+  background-color: white;
+  width: 500px;
+  margin: 10% auto;
+  border-radius: 20px;
+  height: 400px;
+  }
+  #closeBtn1{
+    width:40px;
+    color: #ff6928; 
+    float:right;
+  }
+  #closeBtn2{
+    width:40px;
+    color: #ff6928; 
+    float:right;
+  }
+  .modal-body p{
+    font-size:16px;
+  }
+.good{
+  padding-top:20px;
+  height:400px; 
+}
+.good h1{
+  width:80%;
+  margin:auto;
+  margin-top:20px;
+}
+.good p{
+  font-size: 20px;
+  margin-top:40px;
+  margin-bottom: 20px;
+  text-align: center;
+  height:40px;
+}
+.good img{
+  height:200px;
+  width:250px;
+  margin-left: 120px;
+}
+.bad{
+  padding-top:20px;
+  height:100px;
+}
+.bad h1{
+  width:80%;
+  margin:auto;
+  margin-top:20px;
+}
+.bad p{
+  font-size: 20px;
+  margin-top:40px;
+  margin-bottom: 20px;
+  text-align: center;
+  height:40px;
+}
+.bad img{
+  height:200px;
+  width:250px;
+  margin-left: 120px;
+}
+.log{
+  padding-top: 1px;
+
+}
+
+
+.log h1{
+  font-size: 20px;
+  margin-top: 40px;
+}
+.log-item{
+  margin-bottom: 70px;
+  margin-top: 30px;
+}
+
+.Form-Item1 {
+  border-top: 1px solid #ddd;
+  padding-top: 8px;
+  padding-bottom: 12px;
+  width: 90%;
+  margin:0 auto;
+  display: flex;
+  align-items: center;
+   
+}
+.Form-Item-Label1 {
+  width: 100%;
+  max-width: 80px;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  font-size: 12px;
+}
+.log-bt{
+  margin-top: 50px;
+}
+.log-bt p{
+  cursor: pointer;
+  width: 180px;
+  margin-left: 300px;
+  margin-top: 8px;
+}
+.log-bt p:hover{
+  opacity: 0.3;
+}
+
+.modal-item{
+  width:110px;
+
+}
+.req{
+  
+  width:30px;
+  margin-left: 10px;
+}
+
+.Form-Item-Label-Required1 {
+  border-radius: 6px;
+  margin-right: 8px;
+  padding:10px 10px;
+  width: 8px;
+  text-align: center;
+  background: #ff6928;
+  color: #fff;
+  font-size: 10px;
+  
+}
+
+.Form-Item-Input1 {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-left: 10px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 24px;
+  flex: 1;
+  width: 100%;
+  max-width: 200px;
+  background: #eaedf2;
+  font-size: 8px;
+
+}
+
+.Form-Btn1 {
+  border-radius: 6px;
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 200px;
+  display: block;
+  letter-spacing: 0.05em;
+  background: #ff6928;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+
+}
+.Form-Btn1:hover{
+  opacity:0.7;
+}
+
+/* フッターの設定 */
+footer {
+  background-color: #ff6928;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  color: white;
+  padding:7px;
+  font-size: 12px;
+}
+ /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+
+      /* Optional: Makes the sample page fill the window. */
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }    

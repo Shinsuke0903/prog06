@@ -1,0 +1,103 @@
+/* html,bodyの設定をする */
+html, body{
+  height:50%;
+  margin:0;
+  padding:0;
+  z-index: 1; 
+}
+/* ヘッダーの設定をする */
+header {
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  height: 36px;
+  padding-top:4px; 
+  background-color: #ff6928; 
+  color: white; 
+}
+header h1{
+  font-size:35px;
+}
+h1 {
+  font-size: 100%;
+}
+/* topwrapper(上部全体)部分の設定--------------------------------------------------*/
+.top-wrapper{
+  height:765px;
+  display: flex;
+}
+/* 上部左の設定 */
+.items{
+  height:765px;
+  border:4px solid #ff6928;
+  width:20%;
+  margin-bottom: 6px;
+}
+/* プロフィール写真の設定 */
+.prof{
+  height:130px;
+  display: flex;
+  margin-top: 15px;
+}
+.prof p{
+  font-size:25px;
+  padding-top:55px;
+  padding-left:20px;
+  color: white;
+  font-weight: bold;
+}
+.prof-image{
+  padding-top:10px;
+  padding-left:10px;
+}
+.prof-image1{
+  width: 110px;
+  height:110px;
+  border-radius: 70px;
+}
+/* ご飯の量のリクエストの設定ーーーーーーーーーーーーーーーーーーー */
+.request{
+  margin: auto;
+  width:100%;
+  margin-top: 20px;
+  margin-bottom:20px;
+  margin-left: 30px;
+  margin-left: 30px;
+}
+#analysis {
+  list-style-type: none;
+  background-color: #ff6928;
+  cursor: pointer;
+  height:30px;
+  font-size:20px;
+  padding:10px;
+  width:100%;
+  color: white;
+  border-radius: 8px;
+}
+#analysis:hover{
+  opacity:0.7;
+}
+
+
+
+
+
+/* フッターの設定 */
+footer {
+  background-color: #ff6928;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  color: white;
+  padding:7px;
+  font-size: 12px;
+}
+ /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+
+      /* Optional: Makes the sample page fill the window. */
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }    
